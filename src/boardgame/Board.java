@@ -11,7 +11,7 @@ public class Board {
 		
 	}
 	
-	public Board(int rows, int columns, Piece[][] pieces) {
+	public Board(int rows, int columns) {
 		this.rows = rows;
 		this.columns = columns;
 		pieces = new Piece[rows][columns]; 
@@ -37,17 +37,17 @@ public class Board {
 
 	//methods
 	public Piece piece (int rows , int columns) {
-		
+		return pieces[rows][columns];
 	}
 	
 	public Piece piece (Position position) {
-		
+		return pieces[position.getRow()][position.getColumn()];
 	}
 	
 	public void placePiece(Piece piece , Position position) {
 		
 	}
-	
+	/*
 	public Piece removePiece(Position position) {
 		
 	}
@@ -59,5 +59,5 @@ public class Board {
 	public Boolean thereIsAPiece(Position position) {
 		
 	}
-
+    */
 }

@@ -11,26 +11,22 @@ public class Piece {
 		
 	}
 	
-
 	
-	public Piece(Position position, Board board) {
+	public Piece( Board board) {
 		this.board = board;
+		
 	}
-
-
 
 	//Get's Set
 	public Position getPosition() {
 		return position;
 	}
-
-	
 	
 	protected Board getBoard() {
 		return board;
 	}
 
-	//methods
+	/*methods
 	public Boolean possibleMoves() {
 		
 	}
@@ -40,5 +36,5 @@ public class Piece {
 	public Boolean isThereAnyPossibleMove() {
 		
 	}
-	
+	*/
 }

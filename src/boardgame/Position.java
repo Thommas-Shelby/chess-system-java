@@ -5,20 +5,20 @@ public class Position {
 	private int row;
 	private int column;
 	
+	//Constructor
 	public Position () {
 		
 	}
 	
 	public Position(int row, int column) {
-		super();
 		this.row = row;
 		this.column = column;
 	}
 
+	//Get's Set
 	public int getRow() {
 		return row;
 	}
-
 	public void setRow(int row) {
 		this.row = row;
 	}
@@ -26,11 +26,11 @@ public class Position {
 	public int getColumn() {
 		return column;
 	}
-
 	public void setColumn(int column) {
 		this.column = column;
 	}
 	
+	//Methods
 	public void setValues (int row , int column) {
 	
 		
