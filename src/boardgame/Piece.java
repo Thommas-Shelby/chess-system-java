@@ -14,7 +14,6 @@ public class Piece {
 	
 	public Piece( Board board) {
 		this.board = board;
-		
 	}
 
 	//Get's Set

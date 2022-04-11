@@ -1,6 +1,8 @@
 package chess;
 
 import boardgame.Board;
+import boardgame.Position;
+import chess.pieces.Rook;
 
 public class ChessMatch {
 	
@@ -16,6 +18,7 @@ public class ChessMatch {
 	//Constructor
 	public ChessMatch() {
 		board = new Board(8 , 8);
+		initialSetup();
 	}
 	
 	//Get's Set
@@ -34,6 +37,11 @@ public class ChessMatch {
 		}
 		return mat;
 	}
+	
+	private void initialSetup () {
+		board.placePiece(new Rook(board, Color.WHITE), new Position(2, 1));
+	}
+	
 	/*
 	public boolean[][] possibleMoves (ChessPosition sourcePosition){
 		
