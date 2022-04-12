@@ -18,7 +18,8 @@ public class ChessMatch {
 	//Constructor
 	public ChessMatch() {
 		board = new Board(8 , 8);
-		initialSetup();
+		initialSetup(
+				);
 	}
 	
 	//Get's Set
@@ -39,9 +40,12 @@ public class ChessMatch {
 	}
 	
 	private void initialSetup () {
-		board.placePiece(new Rook(board, Color.WHITE), new Position(2, 1));
+		placeNewPiece('a' , 8 , new Rook(board, Color.WHITE));
 	}
 	
+	public void placeNewPiece(char column , int row , ChessPiece piece) {
+		board.placePiece(piece, new ChessPosition(column, row).toPosition());
+	}
 	/*
 	public boolean[][] possibleMoves (ChessPosition sourcePosition){
 		
