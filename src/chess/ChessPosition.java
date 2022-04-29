@@ -13,7 +13,7 @@ public class ChessPosition {
 	
 	public ChessPosition(char column, int row) {
 		if (column < 'a' || column > 'h' || row < 1 || row > 8) {
-			throw new ChessException("quantidade linhas e colunar foi esta errado");
+			throw new ChessException("quantidade linhas e colunar esta errado");
 		}
 		this.row = row;
 		this.column = column;
